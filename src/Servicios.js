@@ -1,5 +1,11 @@
 import React from 'react'
 import Servicio from './Servicio'
+import imageFamilia from './images/familia.jpg'
+import imageCivil from './images/compraventa.jpg'
+import imageTrabajo from './images/personas_trabajando.jpg'
+import imageAgua from './images/grifo.jpg'
+import imageChoque from './images/choque.avif'
+import imageCarcel from './images/carcel.jpg'
 
 const Servicios = () => {
   return (
@@ -12,11 +18,24 @@ const Servicios = () => {
         mx-auto p-6 md:p-12 lg:p-20'>
             
             <Servicio
-            title="Servicio 1" subtitle="descripción del servicio"/>
+            title="Familia" subtitle="Divorcios, Pensión de alimentos, Medidas de protección, Violencia Intrafamilar"
+             clase='md:col-span-4' image={imageFamilia}/>
+        
             <Servicio
-            title="Servicio 2" subtitle="descripcion del servicio 2"/>
+            title="Civil" subtitle="Contratos, Escrituras, Compraventas, Arriendos, Posesión efectivas, Testamentos, otros" 
+            clase='md:col-span-6' image={imageCivil}/>
             <Servicio
-            title="Servicio 3" subtitle="descripción del servicio 3"/>
+            title="Laboral" subtitle="Contrato de trabajo, Despidos, Autodespido, Tutela laboral, Organización empresarial, otros." 
+            clase='md:col-span-6' image={imageTrabajo}/>
+            <Servicio
+            title="Aguas" subtitle="Derechos de agua y perfeccionamiento" clase='md:col-span-4'
+            image={imageAgua}/>
+            <Servicio
+            title="Policía local" subtitle="Accidentes de vehículos, Derechos del consumidor, otros" 
+            clase='md:col-span-5' image={imageChoque} />
+            <Servicio
+            title="Penal" subtitle="Defensa penal y Querellas criminales" clase='md:col-span-5'
+            image={imageCarcel} />
         </div>
     </section>
   )

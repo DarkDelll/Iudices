@@ -1,6 +1,9 @@
 import React from 'react'
 
-const Servicio = ({title, subtitle, clase}) => {
+const Servicio = ({title, subtitle, clase, image}) => {
+    
+
+
   return (
     <article
   class={`
@@ -21,7 +24,12 @@ const Servicio = ({title, subtitle, clase}) => {
   >
   </div>
 
-  <slot name="image" />
+  <div
+    class="background transition-scale absolute bottom-0 left-0 top-[45%]
+            -z-10 h-full w-full bg-blue-800
+             bg-cover bg-center bg-no-repeat opacity-90  duration-1000 ease-in-out group-hover:scale-110"
+    style={{backgroundImage: `url(${image})`}}
+    ></div>
 
   <div
     class="relative z-20 flex h-full select-none flex-col justify-start| gap-1 p-4 text-lg md:p-6"
@@ -32,7 +40,7 @@ const Servicio = ({title, subtitle, clase}) => {
 
     {
       subtitle && (
-        <h3 class="-mt-4 mb-4 text-3xl font-semibold text-amber-100/70">
+        <h3 class="mt-4 mb-4 text-2xl font-semibold text-amber-100/70">
           {subtitle}
         </h3>
       )
