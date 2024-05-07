@@ -1,4 +1,5 @@
 import React from 'react'
+import imagenIudices from './images/mision.webp'
 
 const Nosotros = () => {
   return (
@@ -18,8 +19,8 @@ const Nosotros = () => {
                     <h6 className='text-md md:text-lg text-gray-800 p-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus quam, fermentum quis iaculis et, molestie eu diam. In molestie eros vitae lacus venenatis, vel faucibus urna mattis. Aliquam gravida neque sit amet viverra egestas. Vestibulum vel orci pellentesque ante suscipit egestas. Suspendisse at lacinia nisi. Sed vulputate mi sed turpis tempus ultrices. Mauris viverra purus vel auctor euismo</h6>
                 </div>
             </div>
-            <div className=' h-[50%] w-full md:w-[40%] md:h-[70%] mr-8 flex shadow-lg bg-white justify-center items-center'>
-                <p className='text-3xl text-gray-800'>Foto</p>
+            <div className='h-[50%] w-full md:w-[50%] md:h-[70%] mr-8 flex shadow-lg justify-center items-center backdrop-blur-sm'>
+                <img src={imagenIudices} className=' rounded-md shadow-sm object-fill '></img>
             </div>
         </div>
         
