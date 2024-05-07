@@ -1,5 +1,5 @@
 import React from 'react'
-import Servicio from './Servicio'
+import Servicio from './Servicio.js'
 import imageFamilia from './images/familia.jpg'
 import imageCivil from './images/compraventa.jpg'
 import imageTrabajo from './images/personas_trabajando.jpg'
