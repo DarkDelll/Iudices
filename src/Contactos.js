@@ -28,8 +28,19 @@ const Contactos = () => {
                 text:'Su mensaje ha sido enviado correctamente',
                 icon:'success'
             })
+            setFormData({
+                nombre: '',
+                mail: '',
+                numero: '',
+                detalles: ''
+            });
           },
           (error) => {
+            Swal.fire({
+                title: 'Error',
+                text: 'Hubo un problema al enviar su mensaje',
+                icon: 'error'
+            });
             console.log('FAILED...', error);
           },
         );
