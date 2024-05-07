@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2';
 
 const Contactos = () => {
     const form = useRef();
@@ -22,7 +23,11 @@ const Contactos = () => {
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            Swal.fire({
+                title:'Envío Exitoso',
+                text:'Su mensaje ha sido enviado correctamente',
+                icon:'success'
+            })
           },
           (error) => {
             console.log('FAILED...', error);
