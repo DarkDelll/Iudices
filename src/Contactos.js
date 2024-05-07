@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contactos = () => {
+    const form = useRef();
     const [formData, setFormData] = useState({
         nombre: '',
         mail: '',
@@ -14,26 +16,24 @@ const Contactos = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const response = await fetch('/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData)
-            });
-            const result = await response.text();
-            alert(result);
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Error enviando el mensaje');
-        }
+        emailjs
+        .sendForm('service_gouljjh', 'template_y406hkn', form.current, {
+          publicKey: 'zKj69RDA5FaywYXx4',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error);
+          },
+        );
     };
     const message = "¡Hola IUDICES! Necesito de sus servicios";
     const phone = "+56932274289";
   return (
     <div className='md:h-[80vh]'>
-        <form onSubmit={handleSubmit} >
+        <form ref={form} onSubmit={handleSubmit} >
             <h2 className='text-white text-3xl mb-6'>Contáctanos</h2>
             <div className='flex gap-5 md:gap-0 flex-col md:flex-row align-center justify-evenly p-8'>
                 <div className='flex flex-col gap-4 '>
@@ -45,8 +45,8 @@ const Contactos = () => {
                     type="button"
                     data-twe-ripple-init
                     data-twe-ripple-color="light"
-                    class="w-full mb-8 rounded bg-[#128c7e] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg ">
-                        <span class="[&>svg]:h-5 [&>svg]:w-5 flex gap-3 justify-center">
+                    className="w-full mb-8 rounded bg-[#128c7e] px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg ">
+                        <span className="[&>svg]:h-5 [&>svg]:w-5 flex gap-3 justify-center">
                             <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -61,7 +61,7 @@ const Contactos = () => {
                     </a>
                     <div className='flex flex-col gap-3'>
                     <label className='text-white font-semibold text-2xl'>¡Visitanos en nuestra sucursal!</label>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d678.7965836095581!2d-71.1621622231398!3d-31.630567135566814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968f2ae9fc5fc139%3A0x29c06a4c79686639!2sArturo%20Prat%20131%2C%201930399%20Choapa%2C%20Illapel%2C%20Coquimbo!5e0!3m2!1ses-419!2scl!4v1715105520469!5m2!1ses-419!2scl" className='w-full h-60' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d678.7965836095581!2d-71.1621622231398!3d-31.630567135566814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968f2ae9fc5fc139%3A0x29c06a4c79686639!2sArturo%20Prat%20131%2C%201930399%20Choapa%2C%20Illapel%2C%20Coquimbo!5e0!3m2!1ses-419!2scl!4v1715105520469!5m2!1ses-419!2scl" className='w-full h-60' allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div className='flex flex-col md:w-[40%] gap-4 border-black border-2 rounded-lg bg-white h-[60vh] p-3'>

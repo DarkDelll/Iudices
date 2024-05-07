@@ -6,7 +6,7 @@ const Servicio = ({title, subtitle, clase, image}) => {
 
   return (
     <article
-  class={`
+  className={`
   ${clase}
   col-span-5
   relative rounded-xl
@@ -19,28 +19,28 @@ const Servicio = ({title, subtitle, clase, image}) => {
 >
    
   <div
-    class="absolute bottom-0 top-0 z-10 h-full w-full
+    className="absolute bottom-0 top-0 z-10 h-full w-full
     bg-gradient-to-b from-transparent from-40% via-[#151836]/50 to-[#151836]/80"
   >
   </div>
 
   <div
-    class="background transition-scale absolute bottom-0 left-0 top-[45%]
+    className="background transition-scale absolute bottom-0 left-0 top-[45%]
             -z-10 h-full w-full bg-blue-800
              bg-cover bg-center bg-no-repeat opacity-90  duration-1000 ease-in-out group-hover:scale-110"
     style={{backgroundImage: `url(${image})`}}
     ></div>
 
   <div
-    class="relative z-20 flex h-full select-none flex-col justify-start| gap-1 p-4 text-lg md:p-6"
+    className="relative z-20 flex h-full select-none flex-col justify-start| gap-1 p-4 text-lg md:p-6"
   >
-    <h2 class="mb-4 text-balance text-3xl font-semibold uppercase text-white">
+    <h2 className="mb-4 text-balance text-3xl font-semibold uppercase text-white">
       {title}
     </h2>
 
     {
       subtitle && (
-        <h3 class="mt-4 mb-4 text-2xl font-semibold text-amber-100/70">
+        <h3 className="mt-4 mb-4 text-2xl font-semibold text-amber-100/70">
           {subtitle}
         </h3>
       )

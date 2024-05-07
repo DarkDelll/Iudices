@@ -6,13 +6,13 @@ const Nosotros = () => {
     <section className='text-white h-[80vh] flex justify-center p-6 items-center relative'  >
         <div className=' w-[90%] h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
-            class=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[70%] md:w-[40%]"
+            className=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[70%] md:w-[40%]"
             >
                 <div
-                    class="absolute bottom-0 left-0 h-full w-1 origin-bottom scale-y-0 transform bg-yellow-600/70 duration-300 group-hover:scale-y-100"
+                    className="absolute bottom-0 left-0 h-full w-1 origin-bottom scale-y-0 transform bg-yellow-600/70 duration-300 group-hover:scale-y-100"
                 ></div>
                 <div
-                    class="absolute bottom-0 right-0 h-full w-1 origin-top scale-y-0 transform bg-yellow-600/70 duration-300 group-hover:scale-y-100"
+                    className="absolute bottom-0 right-0 h-full w-1 origin-top scale-y-0 transform bg-yellow-600/70 duration-300 group-hover:scale-y-100"
                 ></div>
                 <div >
                     <h4 className=' text-2xl text-gray-800 font-semibold'>NUESTRA MISIÓN</h4>
