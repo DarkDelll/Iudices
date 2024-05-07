@@ -50,7 +50,7 @@ const Contactos = () => {
   return (
     <div className='md:h-[80vh]'>
         <form ref={form} onSubmit={handleSubmit} >
-            <h2 className='text-white text-3xl mb-6'>Contáctanos</h2>
+            <h2 className='text-white text-4xl font-bold mb-6'>Contáctanos</h2>
             <div className='flex gap-5 md:gap-0 flex-col md:flex-row align-center justify-evenly p-8'>
                 <div className='flex flex-col gap-4 '>
                     <p className='text-white'>Contacta a través de nuestro formulario o a través de nuestro Whatsapp</p>
