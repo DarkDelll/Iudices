@@ -18,8 +18,8 @@ const Contactos = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         emailjs
-        .sendForm('service_gouljjh', 'template_y406hkn', form.current, {
-          publicKey: 'zKj69RDA5FaywYXx4',
+        .sendForm('service_m11xj8s', 'template_nfftybv', form.current, {
+          publicKey: 'ORpP1zoyfJcVb69IP',
         })
         .then(
           () => {
