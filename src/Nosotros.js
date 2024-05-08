@@ -1,9 +1,22 @@
 import React from 'react'
 import imagenIudices from './images/mision.webp'
+import imagenIudices2 from './images/mision2.webp'
+import imagenIudices3 from './images/mision3.webp'
+import imagenIudices4 from './images/mision4.webp'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const Nosotros = () => {
+    const images = [imagenIudices, imagenIudices2, imagenIudices3, imagenIudices4]
+    
+    
   return (
     <section className='text-white h-[80vh] flex justify-center p-6 items-center relative'  >
+       
         <div className=' w-[90%] h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
             className=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[70%] md:w-[40%]"
@@ -20,7 +33,24 @@ const Nosotros = () => {
                 </div>
             </div>
             <div className='h-[50%] w-full md:w-[50%] md:h-[70%] mr-8 flex shadow-lg justify-center items-center backdrop-blur-sm'>
-                <img src={imagenIudices} className=' rounded-md shadow-sm object-fill '></img>
+            <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+            >
+                {images.map((image, index) => (
+                    <SwiperSlide>
+                        <div key={index} className="w-full h-full flex justify-center items-center">
+                            <img src={image} className="rounded-md shadow-sm object-fill" alt="Carrusel imagen" />
+                        </div>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
             </div>
         </div>
         
