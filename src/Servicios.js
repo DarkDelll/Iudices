@@ -3,7 +3,7 @@ import Servicio from './Servicio.js'
 import imageFamilia from './images/familia.webp'
 import imageCivil from './images/compraventa.jpg'
 import imageTrabajo from './images/personas_trabajando.jpg'
-import imageAgua from './images/grifo.jpg'
+import imageAgua from './images/aguas.webp'
 import imageChoque from './images/choque.avif'
 import imageCarcel from './images/carcel.jpg'
 
