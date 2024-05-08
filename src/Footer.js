@@ -32,7 +32,7 @@ const Footer = () => {
             
         </div>
         <div className='h-[5vh] bg-gray-800' >
-            <h3 className='text-gray-200'> &copy; 2024 TODOS lOS DERECHOS RESERVADOS IUDICES ABOGADOS</h3>
+            <h3 className='text-gray-200'> &copy; 2024 TODOS LOS DERECHOS RESERVADOS IUDICES ABOGADOS</h3>
         </div>
     </div>
   )
