@@ -1,6 +1,6 @@
 import React from 'react'
 import Servicio from './Servicio.js'
-import imageFamilia from './images/familia.jpg'
+import imageFamilia from './images/familia.webp'
 import imageCivil from './images/compraventa.jpg'
 import imageTrabajo from './images/personas_trabajando.jpg'
 import imageAgua from './images/grifo.jpg'

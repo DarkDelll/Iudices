@@ -4,6 +4,7 @@ import Contacto from './Contacto.js';
 import Nav from './Nav.js'
 import 'tailwindcss/tailwind.css';
 import Main from './Main.js';
+import Footer from './Footer.js';
 
 function App() {
   const [showNav, setShowNav] = useState(true);
@@ -37,6 +38,7 @@ function App() {
       </div>
       <Main/>
       <Contacto></Contacto>
+      <Footer/>
     </div>
   );
 }
