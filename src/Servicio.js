@@ -26,7 +26,7 @@ const Servicio = ({title, subtitle, clase, image}) => {
 
   <div
     className="background transition-scale absolute bottom-0 left-0 top-[45%]
-            -z-10 h-full w-full bg-blue-800
+            -z-10 h-auto w-full bg-blue-800
              bg-cover bg-center bg-no-repeat opacity-90  duration-1000 ease-in-out group-hover:scale-110"
     style={{backgroundImage: `url(${image})`}}
     ></div>
