@@ -9,7 +9,7 @@ import imageCarcel from './images/carcel.jpg'
 
 const Servicios = () => {
   return (
-    <section>
+    <section id="servicios">
         <div className='mt-20 md:mt-auto'>
             <h2 className='text-white text-4xl font-bold'>Nuestros Servicios</h2>
         </div>

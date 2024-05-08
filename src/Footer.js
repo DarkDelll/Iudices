@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col' id="agenda">
         <div className='h-[30vh] bg-gray-900 flex justify-around'>
             <div className='p-10'>
                 <h3 className=' text-gray-300 mb-2'>Nuestras Redes Sociales</h3>
@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
             
         </div>
-        <div className='h-[5vh] bg-gray-800'>
+        <div className='h-[5vh] bg-gray-800' >
             <h3 className='text-gray-200'> &copy; 2024 TODOS lOS DERECHOS RESERVADOS IUDICES ABOGADOS</h3>
         </div>
     </div>

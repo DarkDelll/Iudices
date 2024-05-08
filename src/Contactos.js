@@ -48,7 +48,7 @@ const Contactos = () => {
     const message = "¡Hola IUDICES! Necesito de sus servicios";
     const phone = "+56932274289";
   return (
-    <div className='md:h-[80vh]'>
+    <div className='md:h-[80vh]' id="contacto">
         <form ref={form} onSubmit={handleSubmit} >
             <h2 className='text-white text-4xl font-bold mb-6'>Contáctanos</h2>
             <div className='flex gap-5 md:gap-0 flex-col md:flex-row align-center justify-evenly p-8'>

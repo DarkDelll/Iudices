@@ -15,7 +15,7 @@ const Nosotros = () => {
     
     
   return (
-    <section className='text-white h-[80vh] flex justify-center p-6 items-center relative'  >
+    <section className='text-white h-[80vh] flex justify-center p-6 items-center relative' id="nosotros" >
        
         <div className=' w-[90%] h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
