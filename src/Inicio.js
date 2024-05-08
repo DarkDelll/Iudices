@@ -16,7 +16,7 @@ const Inicio = () => {
       </div>
       <div className="relative z-20 flex h-full w-full select-none flex-col justify-center gap-1 p-4 text-lg md:p-6">
         <h1 className="text-white  text-3xl font-bold ">JUSTICIA Y CONFIANZA, NUESTRO COMPROMISO COMO ABOGADOS</h1>
-        <h2 className="text-white  text-2xl font-semibold ">SOLUCIONES LEGALES A TU ALCANTE</h2>
+        <h2 className="text-white  text-2xl font-semibold ">SOLUCIONES LEGALES A TU ALCANCE</h2>
       </div>
       
     </article>
