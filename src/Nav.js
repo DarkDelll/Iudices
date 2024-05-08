@@ -14,10 +14,10 @@ const Nav = () => {
         <div className=" rounded-xl w-auto z-30"><img src={logo} alt="" className='w-16 brightness-150' /></div>
         <div className={` transition-all duration-300 nav-links md:static md:bg-inherit bg-white absolute md:min-h-fit min-h-[60vh] left-0 ${isActive ? 'top-[12%]' : 'top-[-100%]'} md:w-auto w-full flex items-center z-40`}>
           <ul className=" ml-[40%] md:ml-auto flex flex-col md:flex-row md:items-center no-underline  md:gap-[2vw] gap-8 ">
-              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl  md:px-4 py-3  rounded-full">Quienes Somos</a></li>
-              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">Servicios</a></li>
-              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">Contacto</a></li>
-              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">Agenda</a></li>
+              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl  md:px-4 py-3  rounded-full">QUIENES SOMOS</a></li>
+              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">SERVICIOS</a></li>
+              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">CONTACTO</a></li>
+              <li><a href="#" className="hover:text-slate-600 md:text-xl lg:text-2xl md:px-4 py-3  rounded-full">AGENDA</a></li>
           </ul>
         </div>
         <div className="text-3xl cursor-pointer md:hidden text-white z-30 ">

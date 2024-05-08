@@ -19,7 +19,7 @@ const Nosotros = () => {
        
         <div className=' w-[90%] h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
-            className=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[70%] md:w-[40%]"
+            className=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[95%] md:w-[50%]"
             >
                 <div
                     className="absolute bottom-0 left-0 h-full w-1 origin-bottom scale-y-0 transform bg-yellow-600/70 duration-300 group-hover:scale-y-100"
@@ -29,7 +29,12 @@ const Nosotros = () => {
                 ></div>
                 <div >
                     <h4 className=' text-2xl text-gray-800 font-semibold'>NUESTRA MISIÓN</h4>
-                    <h6 className='text-md md:text-lg text-gray-800 p-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus quam, fermentum quis iaculis et, molestie eu diam. In molestie eros vitae lacus venenatis, vel faucibus urna mattis. Aliquam gravida neque sit amet viverra egestas. Vestibulum vel orci pellentesque ante suscipit egestas. Suspendisse at lacinia nisi. Sed vulputate mi sed turpis tempus ultrices. Mauris viverra purus vel auctor euismo</h6>
+                    <h6 className='text-md md:text-md text-gray-800 p-5 justify-start flex flex-col gap-2' >
+                        <p>Nos complace presentarnos como un equipo de abogados dedicados y comprometidos en brindar soluciones legales efectivas y personalizadas a nuestros clientes. En nuestro estudio jurídico, entendemos que cada gestión o conflicto es único y requiere un enfoque especializado.</p>
+                        <p>Nuestro objetivo principal es proporcionar un servicio legal integral y de calidad, respaldado por una sólida ética de trabajo, profesionalismo y confidencialidad, manteniendo siempre una comunicación cercana y transparente.</p>
+                        <p>Esperamos tener la oportunidad de servirle y brindarle la representación legal de calidad que se merece.</p>
+                        <p>ESTUDIO JURIDICO IUDICES ABOGADOS</p>
+                    </h6>
                 </div>
             </div>
             <div className='h-[50%] w-full md:w-[50%] md:h-[70%] mr-8 flex shadow-lg justify-center items-center backdrop-blur-sm'>

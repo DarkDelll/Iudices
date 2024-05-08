@@ -12,10 +12,11 @@ const Inicio = () => {
     bg-gradient-to-b from-transparent from-10% via-[#151836]/30 to-[#151836]/80"></div>
       <div className=" h-[80vh]  md:mt-auto background transition-scale absolute bottom-0 left-0 top-0
         z-0 md:h-[100vh] w-[100vw] md:w-full bg-blue-950
-        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity" style={backgroundImageStyle}>
+        bg-cover bg-center bg-no-repeat opacity-90 " style={backgroundImageStyle}>
       </div>
       <div className="relative z-20 flex h-full w-full select-none flex-col justify-center gap-1 p-4 text-lg md:p-6">
-        <h1 className="text-white  text-3xl ">TITULO UNO DE LA PÁGINA WEB</h1>
+        <h1 className="text-white  text-3xl font-bold ">JUSTICIA Y CONFIANZA, NUESTRO COMPROMISO COMO ABOGADOS</h1>
+        <h2 className="text-white  text-2xl font-semibold ">SOLUCIONES LEGALES A TU ALCANTE</h2>
       </div>
       
     </article>

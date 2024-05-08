@@ -20,7 +20,7 @@ const Servicio = ({title, subtitle, clase, image}) => {
    
   <div
     className="absolute bottom-0 top-0 z-10 h-full w-full
-    bg-gradient-to-b from-transparent from-40% via-[#151836]/50 to-[#151836]/80"
+    "
   >
   </div>
 
