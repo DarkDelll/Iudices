@@ -17,7 +17,7 @@ const Nosotros = () => {
   return (
     <section className='text-white h-[80vh] flex justify-center p-6 items-center relative' id="nosotros" >
        
-        <div className=' w-[90%] h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
+        <div className=' p-5 md:p-2 w-[90%] max-h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
             className=" group relative bg-[#dadada]  h-[50%] sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10 md:h-[95%] md:w-[50%]"
             >
@@ -29,7 +29,7 @@ const Nosotros = () => {
                 ></div>
                 <div >
                     <h4 className=' text-2xl text-gray-800 font-semibold'>NUESTRA MISIÓN</h4>
-                    <h6 className='text-md md:text-md text-gray-800 p-5 justify-start flex flex-col gap-2' >
+                    <h6 className='text-xs md:text-base text-gray-800 p-5 justify-start flex flex-col gap-2' >
                         <p>Nos complace presentarnos como un equipo de abogados dedicados y comprometidos en brindar soluciones legales efectivas y personalizadas a nuestros clientes. En nuestro estudio jurídico, entendemos que cada gestión o conflicto es único y requiere un enfoque especializado.</p>
                         <p>Nuestro objetivo principal es proporcionar un servicio legal integral y de calidad, respaldado por una sólida ética de trabajo, profesionalismo y confidencialidad, manteniendo siempre una comunicación cercana y transparente.</p>
                         <p>Esperamos tener la oportunidad de servirle y brindarle la representación legal de calidad que se merece.</p>
