@@ -7,9 +7,9 @@ import imageAgua from './images/aguas.webp'
 import imageChoque from './images/choque.avif'
 import imageCarcel from './images/carcel.jpg'
 
-const Servicios = () => {
+const Servicios = React.forwardRef((props, ref) => {
   return (
-    <section id="servicios">
+    <section id="servicios" ref={ref}>
         <div className='mt-20 md:mt-auto'>
             <h2 className='text-white text-4xl font-bold'>Nuestros Servicios</h2>
         </div>
@@ -40,6 +40,6 @@ const Servicios = () => {
     </section>
     //verificacion
   )
-}
+})
 
 export default Servicios

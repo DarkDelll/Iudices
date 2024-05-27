@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
-const Contactos = () => {
+const Contactos = React.forwardRef((props, ref) => {
     const form = useRef();
     const [formData, setFormData] = useState({
         nombre: '',
@@ -48,7 +48,7 @@ const Contactos = () => {
     const message = "¡Hola IUDICES! Necesito de sus servicios";
     const phone = "+56932274289";
   return (
-    <div className='md:h-[80vh]' id="contacto">
+    <div className='md:h-[80vh]' id="contacto" ref={ref}>
         <form ref={form} onSubmit={handleSubmit} >
             <h2 className='text-white text-4xl font-bold mb-6'>Contáctanos</h2>
             <div className='flex gap-5 md:gap-0 flex-col md:flex-row align-center justify-evenly p-8'>
@@ -95,6 +95,6 @@ const Contactos = () => {
         </form>
     </div>
   )
-}
+})
 
 export default Contactos

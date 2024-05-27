@@ -10,12 +10,12 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-const Nosotros = () => {
+const Nosotros = React.forwardRef((props, ref) => {
     const images = [imagenIudices, imagenIudices2, imagenIudices3, imagenIudices4]
     
     
   return (
-    <section className='text-white h-[80vh] flex justify-center p-6 items-center relative' id="nosotros" >
+    <section className='text-white h-[80vh] flex justify-center p-6 items-center relative' id="nosotros" ref={ref} >
        
         <div className=' p-5 md:p-2 w-[90%] max-h-[90vh] md:h-[60vh] bg-[#dadada] rounded-md shadow-white flex-col md:flex md:flex-row items-center md:justify-evenly'>
             <div
@@ -61,6 +61,6 @@ const Nosotros = () => {
         
     </section>
   )
-}
+})
 
 export default Nosotros
