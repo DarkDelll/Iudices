@@ -34,13 +34,13 @@ const Servicio = ({title, subtitle, clase, image}) => {
   <div
     className="relative z-20 flex h-full select-none flex-col justify-start| gap-1 p-4 text-lg md:p-6"
   >
-    <h2 className="mb-4 text-balance text-3xl font-semibold uppercase text-white">
+    <h2 className="mb-2 text-balance text-3xl font-semibold uppercase text-white">
       {title}
     </h2>
 
     {
       subtitle && (
-        <h3 className="mt-4 mb-4 text-2xl font-semibold text-amber-100/70">
+        <h3 className=" mb-4 text-base md:text-2xl font-semibold text-amber-100/70">
           {subtitle}
         </h3>
       )

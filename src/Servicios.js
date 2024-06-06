@@ -18,12 +18,12 @@ const Servicios = React.forwardRef((props, ref) => {
         grid lg:grid-cols-10 auto-rows-[30rem] gap-4
         mx-auto p-6 md:p-12 lg:p-20'>
             
+            
+            <Servicio 
+            title="Sociedades" subtitle="Constitución de sociedades, modificaciones, término, liquidación, adjudicación." clase='md:col-span-4'
+            image={imagenSociedades} />
             <Servicio
-            title="Familia" subtitle="Divorcios, Pensión de alimentos, Medidas de protección, Violencia Intrafamilar"
-             clase='md:col-span-4' image={imageFamilia}/>
-        
-            <Servicio
-            title="Civil" subtitle="Contratos, Escrituras, Compraventas, Arriendos, Posesión efectivas, Testamentos, otros" 
+            title="Civil" subtitle="Contratos y escrituras, juicios de cobro de dinero, arrendamiento, herencias y posesiones efectivas, indemnizaciones, prescripción de deudas, inmobiliario, estudio de títulos, interdicción, cambio de nombre." 
             clase='md:col-span-6' image={imageCivil}/>
             <Servicio
             title="Laboral" subtitle="Contrato de trabajo, Despidos, Autodespido, Tutela laboral, Organización empresarial, otros." 
@@ -37,9 +37,9 @@ const Servicios = React.forwardRef((props, ref) => {
             <Servicio
             title="Penal" subtitle="Defensa penal y Querellas criminales" clase='md:col-span-5'
             image={imageCarcel} />
-            <Servicio 
-            title="Sociedades" subtitle="Constitución de sociedades, modificaciones, término, liquidación, adjudicación." clase='md:col-span-10'
-            image={imagenSociedades} />
+            <Servicio
+            title="Familia" subtitle="Divorcios, medidas de protección, violencia intrafamiliar, pensión de alimentos, relación directa y regular, cuidado personal, separación judicial, reconocimiento de paternidad, autorización para salir del país."
+             clase='md:col-span-10' image={imageFamilia}/>
         </div>
     </section>
     //verificacion
