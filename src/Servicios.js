@@ -2,10 +2,11 @@ import React from 'react'
 import Servicio from './Servicio.js'
 import imageFamilia from './images/familia.webp'
 import imageCivil from './images/compraventa.jpg'
-import imageTrabajo from './images/personas_trabajando.jpg'
+import imageTrabajo from './images/personas_trabajando.webp'
 import imageAgua from './images/aguas.webp'
-import imageChoque from './images/choque.avif'
-import imageCarcel from './images/carcel.jpg'
+import imageChoque from './images/choque.webp'
+import imageCarcel from './images/carcel.webp'
+import imagenSociedades from './images/sociedades.webp'
 
 const Servicios = React.forwardRef((props, ref) => {
   return (
@@ -36,6 +37,9 @@ const Servicios = React.forwardRef((props, ref) => {
             <Servicio
             title="Penal" subtitle="Defensa penal y Querellas criminales" clase='md:col-span-5'
             image={imageCarcel} />
+            <Servicio 
+            title="Sociedades" subtitle="Constitución de sociedades, modificaciones, término, liquidación, adjudicación." clase='md:col-span-10'
+            image={imagenSociedades} />
         </div>
     </section>
     //verificacion
