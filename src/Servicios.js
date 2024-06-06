@@ -26,7 +26,7 @@ const Servicios = React.forwardRef((props, ref) => {
             title="Civil" subtitle="Contratos y escrituras, juicios de cobro de dinero, arrendamiento, herencias y posesiones efectivas, indemnizaciones, prescripción de deudas, inmobiliario, estudio de títulos, interdicción, cambio de nombre." 
             clase='md:col-span-6' image={imageCivil}/>
             <Servicio
-            title="Laboral" subtitle="Contrato de trabajo, Despidos, Autodespido, Tutela laboral, Organización empresarial, otros." 
+            title="Laboral" subtitle="Elaboración de contrato de trabajo, despido injustificado, autodespido, tutela laboral, acoso laboral, cobro de prestaciones, negociación colectiva, organización empresarial." 
             clase='md:col-span-6' image={imageTrabajo}/>
             <Servicio
             title="Aguas" subtitle="Derechos de agua y perfeccionamiento" clase='md:col-span-4'
